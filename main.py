@@ -7,7 +7,7 @@ def flashcards_quiz():
     with open("flashcards (copy).json", "r") as f:
         flashcards = json.load(f)
     president_questions = list(flashcards.keys())
-    for key in random.choices(president_questions, k=2-):
+    for key in random.choices(president_questions, k=20):
       value = flashcards[key]
       for i in president_questions:
         user_response = input(f"Who was the {i}th president of the United States? ")
